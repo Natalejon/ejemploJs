@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Ejemplo</title>
+</head>
+<body>
+    <h3>Ejemplo 1</h3>
+     <p>Ingrese su edad</p>
+     <li><a href="index.html">Inicio</a></li><br>
+
+    <script>
+        var edad1=prompt('Ingrese su edad')
+        var edad = parseInt (edad1)
+        
+        if (edad<=0){
+            document.write("Edad no valida")
+        
+        }else if(edad<16){
+            document.write("No puede salir...")
+
+        }else if(edad>=16 && edad<=18){
+            document.write("Puede salir cine...")
+        
+        
+        }else {
+            document.write("Puede salir a divertirse...")
+        }
+
+
+    </script>
+</body>
+</html>

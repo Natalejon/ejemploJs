@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;  
+}
+.Titulo{
+    text-align: center;
+    color: #000000;
+    font-style: arial;
+    text-decoration: rgb(0, 0, 0);
+    padding: 2%;
+    margin-bottom: 2px;
+    font-size: 40px;
+    
+}
+li{
+    display: block;
+    list-style: none;
+    width: 20%;
+    text-align: center;   
+    background-color:  #faea5a;
+    padding: 1%;
+}
+li {
+    list-style: none;}
+li a{ 
+    color: rgb(0, 0, 0);
+    width: 10%;
+}
+li a:hover{
+    width: 100%;
+    background-color: #bfaf61;
+    display: block;
+    color: rgb(0, 0, 0);
+}
+li a:visited{
+    color: rgb(0, 0, 0);
+    width: 100%;
+}

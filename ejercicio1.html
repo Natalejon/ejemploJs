@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmia</title>
+</head>
+<body>
+      <h1 class="text-center mt-5 display-4 text-primary">Ejercicio 1</h1>
+        <p> Calcular la utilidad que un trabajador recibe en el reparto anual de utilidades si este se le 
+            asigna como un porcentaje de su salario mensual que depende de su antigüedad en la 
+            empresa de acuerdo con la siguiente tabla:</p>
+    
+    <form>
+        <li><a href="index.html">Inicio</a></li><br>
+        <h3>Digite su salario</h3><br>
+        <input type="number" id="salario"><br>
+        <h3>Digite su antiguedad en la empresa</h3><br>
+        <input type="number" id="antiguedad"><br>
+        <h3>salario ahora es de:</h3> 
+        <input type="number" id="respuesta"><br> 
+        <input type="button" value="calcular" onclick="calculo()">
+       
+    </form> 
+    
+    <script>
+     function calculo(){
+        var salarioIni=Number(document.getElementById('salario').value)
+        var valor2=Number(document.getElementById('antiguedad').value)
+
+        if (valor2==0 && valor2<1){
+            var salarioUno = salarioIni + salarioIni*0.05;
+            document.getElementById('respuesta').value;
+
+           alert(salarioUno);
+        }else if(valor2>=1 && valor2<2){
+            var salarioTotal = salarioIni + salarioIni*0.07;
+            document.getElementById('respuesta').value;
+
+            alert(salarioTotal);
+        }else if(valor2>=2 && valor2<5){
+            var salarioDos = salarioIni + salarioIni*0.1;
+            document.getElementById('respuesta').value;
+
+            alert(salarioDos);
+        }else if(valor2>=5 && valor2<10){
+            var salarioTres = salarioIni + salarioIni*0.15;
+            document.getElementById('respuesta').value;
+
+            alert(salarioTres);
+        }else if(antiguedad=10 && antiguedad>10){
+            var salarioCuatro = salarioIni + salarioIni*0.2;
+            document.getElementById('respuesta').value;
+
+            alert(salarioCuatro);
+        }
+    }
+    </script>
+       
+</body>
+</html>

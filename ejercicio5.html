@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p>Calcular el precio promedio de un artículo consultado en tres establecimientos distintos. 
+        Los precios para el cálculo son introducidos por el usuario.</p>
+    <li><a href="index.html">Inicio</a></li><br>
+    <input type="number" id="Precio1"><br>
+    <input type="number" id="Precio2"><br>
+    <input type="number" id="Precio3"><br> 
+
+    <input type="button" value="calcular" onclick="precio ()">
+    
+    <script>
+        function precio () {
+        var pre1=Number(document.getElementById('Precio1').value)
+        var pre2=Number(document.getElementById('Precio2').value)
+        var pre3=Number(document.getElementById('Precio3').value)
+
+        var PromTotal=(pre1+pre2+pre3)/3
+
+      
+        alert('El promedio total de los tres precios es '+ " " + PromTotal);
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Calcular el promedio de tres notas, dados los porcentajes a lo que equivale la nota final</p>
+    <li><a href="index.html">Inicio</a></li><br>
+    <script>
+        var Nota1= prompt('Ingrese su primer nota')
+        var Nota2 = prompt ('Ingrese la segunda nota')
+        var Nota3 = prompt ('Ingrese la tercer nota')
+        
+        n1=parseFloat(Nota1)*(0.35)
+        n2=parseFloat(Nota2)*(0.35)
+        n3=parseFloat(Nota3)*(0.30)
+
+        var NotaFinal = (n1+n2+n3)
+
+        if(NotaFinal>= 2.95){
+            alert(NotaFinal+" "+'Aprobo la materia')  
+        }else if (NotaFinal<2.95){
+            alert(NotaFinal+" "+'No aprobado')
+        }
+
+
+    </script>
+</body>
+</html> 
